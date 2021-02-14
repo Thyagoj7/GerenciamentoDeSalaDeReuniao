@@ -28,48 +28,46 @@ public class Room {
         this.startHour=startHour;
         this.endHour=endHour;
     }
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public long getId() {
         return id;
     }
-
     public void setId(long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
+    @Column(name="name" , nullable=false)
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    @Column(name="date" , nullable=false)
     public String getDate() {
         return date;
     }
-
     public void setDate(String date) {
         this.date = date;
     }
 
+    @Column(name="startHour" , nullable=false)
     public String getStartHour() {
         return startHour;
     }
-
     public void setStartHour(String startHour) {
         this.startHour = startHour;
     }
 
+    @Column(name="endHour" , nullable=false)
     public String getEndHour() {
         return endHour;
     }
-
     public void setEndHour(String endHour) {
         this.endHour = endHour;
     }
 
-
+    public String toString(){
+        return "Room [id=" + id + ",name=" + name + ",date= " + date + ",startHour=" + startHour + ",endHour=" + endHour+"]";
+    }
 
 
 }
