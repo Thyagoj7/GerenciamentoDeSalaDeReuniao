@@ -1,4 +1,4 @@
-package com.digital.crud.saladereuniao.saladereuniao.Exception;
+package com.digital.crud.saladereuniao.saladereuniao.exception;
 
 
 import org.springframework.http.HttpStatus;
