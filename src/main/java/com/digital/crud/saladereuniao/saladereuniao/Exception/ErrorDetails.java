@@ -2,7 +2,7 @@ package com.digital.crud.saladereuniao.saladereuniao.Exception;
 
 import java.util.Date;
 
-public class ErroDetails {
+public class ErrorDetails {
 
     private Date timestamp;
     private String message;
@@ -33,7 +33,7 @@ public class ErroDetails {
     }
 
 
-    public ErroDetails(Date timestamp, String message, String details) {
+    public ErrorDetails(Date timestamp, String message, String details) {
         super();
         this.timestamp = timestamp;
         this.message = message;
