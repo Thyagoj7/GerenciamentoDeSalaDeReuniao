@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "client-room": {
@@ -25,10 +25,11 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"            ],
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -122,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "client-room"
+    }
+  },
+  "defaultProject": "client-room",
+  "cli": {
+    "analytics": "93ec49fd-8efc-4c17-ae2e-b93f583987e5"
+  }
 }
